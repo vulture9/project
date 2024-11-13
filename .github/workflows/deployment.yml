@@ -1,0 +1,35 @@
+name: build-test-deploy
+
+on: push
+
+jobs:
+  deploy:
+    
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
+    environment:
+      name: production
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: upload artifacts
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+      - name: deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
+        
+        
+      
