@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                
+            }
+
+            #page-content {
+                background-color: aqua;
+                position: relative;
+                min-height: 100vh;
+            }
+
+            .header {
+                height: 100px;
+                background-color: blue;
+            }
+
+            #logo {
+                height: 100%;
+                width: 250px;
+                background-color: red;
+                color: white;
+            }
+
+            .main-content {
+                background-color: beige;
+                width: 850px;
+         
+                margin: auto;
+            }
+
+            .hero-title {
+                height: 40px;
+                width: 100%;
+                background-color: blueviolet;
+            }
+
+            .hero-info {
+                display: flex;
+
+            }
+
+            .hero-image {
+                width: 300px;
+                height: 300px;
+                background-color: yellow;
+            }
+
+            .hero-description {
+                width: 100%;
+                height: 300px;
+                background-color: pink;
+            }
+
+            .hero-skills{
+                display: flex;
+            }
+
+            .good-skills {
+                width: 50%;
+                height: 300px;
+                background-color: greenyellow;
+            }
+
+            .bad-skills {
+                width: 50%;
+                height: 300px;
+                background-color: red;
+            }
+
+            .divider {
+                width: 100%;
+                height: 20px;
+                background-color: azure;
+            }
+
+            .footer {
+                width: 100%;
+                height: 50px;
+                background-color: black;
+                position: absolute;
+                bottom: 0;
+            }
+
+ 
+
+            .item-container {
+                color: white;
+                gap: 10px;
+                display: flex;
+                flex-direction: column;
+               
+               background-color: black;
+               height: 100px;
+              
+            }
+
+            @media  (min-width: 600px) {
+                 .item-container {
+                    flex-direction: row;
+                    
+                }
+            }
+
+
+            .item {
+                background-color: chocolate;
+                flex-grow: 1;
+                height: 50px;
+            }
+
+            .item-2 {
+                flex-grow: 2;
+            }
+        </style>
+       
+    </head>
+    <body>
+        <div id="page-content">
+            <div class="header">
+                <div id="logo">
+                  
+                </div>
+            </div>
+            <div class="item-container">
+                <div class="item"> 1</div>
+                <div class="item item-2"> 2</div>
+                <div class="item"> 3</div>
+                <div class="item"> 4</div>
+            </div>
+            <div class="main-content">
+                <!-- first hero-->
+                <div class="hero-content">
+                    <div class="hero-title">
+    
+                    </div>
+                    <div class="hero-info">
+                        <div class="hero-image">
+    
+                        </div>
+                        <div class="hero-description">
+    
+                        </div>
+                    </div>
+                    <div class="hero-skills">
+                        <div class="good-skills">
+    
+                        </div>
+                        <div class="bad-skills">
+    
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="divider">
+    
+                </div>
+                  <!-- second hero-->
+                  <div class="hero-content">
+                    <div class="hero-title">
+    
+                    </div>
+                    <div class="hero-info">
+                        <div class="hero-image">
+    
+                        </div>
+                        <div class="hero-description">
+    
+                        </div>
+                    </div>
+                    <div class="hero-skills">
+                        <div class="good-skills">
+    
+                        </div>
+                        <div class="bad-skills">
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer">
+    
+            </div>
+        </div>
+
+    </body>
+</html>
+
