@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .main-content {
+                display: flex;
+                flex-direction: row;
+                 flex-wrap: nowrap; 
+                height: 300px;
+                gap: 10px;
+                justify-content: center;
+                
+            }
+
+           
+
+            .content-1 {
+                background-color: #32a852;
+                flex-grow: 1;
+                height: 30%;
+            }
+
+            .content-2 {
+                background-color: #324ea8;
+                flex-grow: 1;
+                height: 30%;
+            }
+
+            .content-3 {
+                background-color: #324ea8;
+                flex-grow: 1;
+                height: 30%;
+            }
+
+            .content-4 {
+                background-color: rgb(36, 168, 10);
+                flex-grow: 1;
+                height: 30%;
+                align-self: center;
+            }
+
+            .content-5 {
+                background-color: blanchedalmond;
+                flex-grow: 1;
+                
+            }
+
+            .content-6 {
+                background-color: turquoise;
+                flex-grow: 1;
+                height: 30%;
+                align-self: flex-end;
+            }
+
+            .content-7 {
+                background-color: #8e32a8;
+                flex-grow: 2;
+                height: 30%;
+
+                align-self: stretch;
+            }
+
+            .content-8 {
+                background-color: #9ea832;
+                flex-grow: 1;
+                height: 30%;
+            }
+
+            .content-9 {
+                background-color: #c72ab7;
+                flex-grow: 1;
+                height: 30%;
+            }
+
+            .content-10 {
+                background-color: brown;
+                flex-grow: 1;
+                height: 30%;
+            }
+
+            .content-11 {
+                background-color: red;
+                flex-grow: 1;
+                height: 30%;
+            }
+
+            .content-12 {
+                background-color: rgba(42, 199, 147, 0.9);
+                flex-grow: 5;
+                height: 30%;
+            }
+
+            .form-content {
+                width: 100%;
+               
+            }
+
+            form {
+            
+                margin: auto;
+                margin-top:50px;
+                width: 500px;
+            }
+          
+        </style>
+    </head>
+    <body>
+           <h1><a href="../index.html">back to home</a></h1>
+        <div class="main-content">
+            <div class="content-1">block 1</div>
+            <div class="content-2">block 2</div>
+            <div class="content-3">block 3</div>
+            <div class="content-4">block 4</div>
+            <div class="content-5">block 5</div>
+            <div class="content-6">block 6</div>
+            <div class="content-7">block 7</div>
+            <div class="content-8">block 8</div>
+            <div class="content-9">block 9</div>
+            <div class="content-10">block 10</div>
+            <div class="content-11">block 11</div>
+            <div class="content-12">block 12</div>
+        </div>
+
+        <div class="form-content">
+            <form id="myForm">
+                <label for="fname">First name:</label><br>
+                <input  id="fname" type="text"><br>
+
+                <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+
+
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label>
+
+
+      <input type="submit" value="Submit">          
+            </form>
+        </div>
+    </body>
+
+    <script>
+
+const form = document.getElementById('myForm');
+
+// Add a submit event listener to the form
+form.addEventListener('submit', (event) => {
+    
+    event.preventDefault();
+
+    // Get the values from the form   fields
+    const name = document.getElementById('fname').value;
+
+
+    // Do something with the form data, e.g., send it to   
+    console.log('name is' + name)
+    console.log(event)
+    console.log(document.getElementById('myForm'))
+    debugger;
+
+    // You can also display an alert or redirect to another page
+    alert('Form submitted successfully!');
+    // window.location.href = 'thankyou.html';
+});
+    </script>
+</html>
